@@ -5,4 +5,6 @@
 ## Project Details
 - The cleaned version data of % class from the nombank dataset is used here. However, this project can be used for any other class of nombank as well.
 - The dataset `%_nombank.clean.train` is shared.
-- 
+- `Token Embeddings`, `POS embeddings` and `BIO embeddings` of each sentence are concatenated.
+- This concatenated input is given to `BiLSTM` model.
+- The model outputs 2 tags `Arg1` or `Not Arg1`.
